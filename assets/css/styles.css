@@ -63,7 +63,7 @@ section {
     align-items: center;    
     height: 48px;
     width: 48px;
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 24px;
     margin-left: 3px;
 }
@@ -72,11 +72,6 @@ section {
 }
 
 /* common styles end */
-
-
-.aboutus{
-    padding: 100px 0;
-}
 .aboutusContent{
     display: flex;
     gap: 40px;
