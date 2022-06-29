@@ -1,0 +1,144 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* common styles start */
+.container{
+    max-width:1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.commonHeading p{
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #808080;
+    line-height: 24px;
+}
+.commonHeading h3{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+}
+.commonHeading h3 span.dot{
+    display: inline-block;
+    width:8px;
+    height: 8px;
+    background-color: #FD6400;
+}
+
+.imagePlay p{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.imagePlay{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.playButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 48px;
+    width: 48px;
+    background-color: white;
+    border-radius: 24px;
+    margin-left: 3px;
+}
+.playButton img{
+    margin-left: 5px;
+}
+
+/* common styles end */
+
+
+.aboutus{
+    padding: 100px 0;
+}
+.aboutusContent{
+    display: flex;
+    gap: 40px;
+}
+.aboutusList{
+    display: flex;
+    gap:10px;
+    align-items: flex-start;
+    margin-top: 37px;
+}
+.aboutusList p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+}
+.aboutusList:nth-of-type(2){
+    margin-bottom: 20px;
+}
+.aboutusText {
+    width: 51%;
+}
+
+.aboutusImage {
+    position: relative;
+    width:49%;
+    margin-top: 42px;
+}
+
+/* about us styles end */
+
+/* ------------team styles start----------------- */
+
+.teamDetails{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 62px;
+}
+.teamCard {
+    width: 340px;
+}
+.teamPrithviraj{
+    background-color: #000000B2;
+    border-radius: 10px;
+}
+.teamDesignation{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.teamDesignation h3{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+}
+.teamDesignation p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #464646;
+}
+
+/* ------------team styles  end----------------- */
+
