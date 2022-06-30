@@ -33,7 +33,7 @@ section {
 .commonHeading h3{
     font-weight: 600;
     font-size: 40px;
-    line-height: 60px;
+    line-height:150%;
 }
 .commonHeading h3 span.dot{
     display: inline-block;
@@ -42,14 +42,14 @@ section {
     background-color: #FD6400;
 }
 
-.imagePlay p{
-    color: white;
+.playVideo p{
+    color: #FFFFFF;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
+    line-height:150%;
 }
-.imagePlay{
+.playVideo{
     position: absolute;
     left: 40px;
     bottom: 40px;
@@ -85,7 +85,7 @@ section {
 .aboutusList p{
     font-weight: 400;
     font-size: 16px;
-    line-height: 29px;
+    line-height: 180%;
 }
 .aboutusList:nth-of-type(2){
     margin-bottom: 20px;
@@ -93,11 +93,11 @@ section {
 .aboutusText {
     width: 51%;
 }
-
 .aboutusImage {
     position: relative;
     width:49%;
     margin-top: 42px;
+    height: fit-content;
 }
 
 /* about us styles end */
@@ -107,7 +107,7 @@ section {
 .teamDetails{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 90px;
     flex-wrap: wrap;
     margin-top: 62px;
 }
@@ -128,12 +128,96 @@ section {
     font-size: 22px;
     line-height: 180%;
 }
+.teamlinkedIn{
+    margin-top: 3px;
+}
 .teamDesignation p{
     font-weight: 400;
     font-size: 16px;
     line-height: 180%;
     color: #464646;
 }
-
+.teamInfo{
+    display: none;
+}
 /* ------------team styles  end----------------- */
 
+/* ----------------responsive styles---------------- */
+@media  only screen and (max-width:1200px) {
+    .container{
+        padding: 0 20px;
+    }
+    .teamDetails{
+        justify-content: center;
+    }
+}
+
+@media  only screen and (max-width:992px) {
+   .aboutusContent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aboutusText {
+        width: 100%;
+    } 
+}
+
+@media  only screen and (max-width:768px){
+    section {
+        padding: 64px 0;
+    }
+  .aboutusImage {
+    width: 100%;
+    }
+    .aboutusText {  
+    width: 100%;
+    }
+    .commonHeading p{
+        font-size: 12px;
+    }
+    .commonHeading h3{
+        font-size: 24px;
+    }
+    .aboutusList p {
+        font-size: 14px;
+    }
+    .aboutusList{
+        gap:12px;
+        margin-top: 42px;
+    }
+    .aboutusList:nth-of-type(2){
+        margin-top: 32px;
+    }
+    .playVideo p{
+        font-size: 14px;
+    }
+    .playVideo{
+        left: 16.04px;
+        bottom:16px;
+        gap: 11.96px;
+    }
+    .playButton{ 
+        height: 28px;
+        width: 28px;
+    }
+    .playButton img{
+        max-width: 6.61px;
+        margin-left: 2px;
+    }
+    .teamInfo{
+        display: block;
+        margin-top:16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 180%;
+    }
+    .teamDetails{
+        gap:42px;
+        margin-top: 42px;
+    }
+    .aboutusContent{
+        gap: 42px;
+    }
+}
+
+/* -----------responsive styles end---------------- */
