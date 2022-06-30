@@ -71,6 +71,20 @@ section {
     margin-left: 5px;
 }
 
+.commonButton button{
+    background-color: #FD6400;
+    color: #FFFFFF;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    border: #FD6400;
+    margin-top: 35px;
+}
+.commonButton{
+   text-align: center;
+}
 /* common styles end */
 .aboutusContent{
     display: flex;
@@ -142,6 +156,47 @@ section {
 }
 /* ------------team styles  end----------------- */
 
+/* ----------------join us start----------------- */
+.joinusDetails{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+}
+.joinusInfo{
+    text-align: center;
+    width: 378px;
+    max-width: 100%;
+}
+.joinusInfo h3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    margin-top: 32px;
+}
+.joinusInfo p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    color: #464646 ;
+    margin-top: 10px;
+    margin: auto;
+}
+.joinusInfo:nth-of-type(1) p{
+    max-width: 363px;
+    margin: auto;
+}
+.joinusInfo:nth-of-type(2){
+    max-width: 368px;
+}
+.joinusInfo:last-child p{
+    max-width: 314px;
+}
+
+/* ----------------join us end---------------- */
+
+
 /* ----------------responsive styles---------------- */
 @media  only screen and (max-width:1200px) {
     .container{
@@ -149,6 +204,12 @@ section {
     }
     .teamDetails{
         justify-content: center;
+    }
+    .joinusDetails{
+        justify-content: space-evenly;
+    }
+    .joinusDetails{
+        flex-wrap: wrap;
     }
 }
 
@@ -167,10 +228,13 @@ section {
         padding: 64px 0;
     }
   .aboutusImage {
-    width: 100%;
+        width: 100%;
+    }
+    .imageWrapper{
+        justify-content: center;
     }
     .aboutusText {  
-    width: 100%;
+        width: 100%;
     }
     .commonHeading p{
         font-size: 12px;
@@ -187,6 +251,9 @@ section {
     }
     .aboutusList:nth-of-type(2){
         margin-top: 32px;
+    }
+    .aboutusContent{
+        gap: 42px;
     }
     .playVideo p{
         font-size: 14px;
@@ -215,8 +282,27 @@ section {
         gap:42px;
         margin-top: 42px;
     }
-    .aboutusContent{
-        gap: 42px;
+   
+
+    .joinusDetails{
+        justify-content: space-evenly;
+    }
+    .joinusDetails:nth-of-type(1){
+        margin-top:2px;
+    }
+    .joinusInfo p{
+        margin-top: 12px;
+        max-width: 320px;
+        font-size: 14px;
+    }
+    .commonButton{
+        padding: 19.2px 28px;
+    }
+    .commonHeading{
+        text-align: center;
+    }
+    .joinusInfo h3{
+        font-size: 16px;
     }
 }
 
